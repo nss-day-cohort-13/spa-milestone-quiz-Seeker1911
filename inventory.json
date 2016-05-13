@@ -1,23 +1,23 @@
 {
 "cars": [
   {
-    "make": "Nissan",
-    "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
+    "make": "Harley Davidson",
+    "model": "Road Glide",
+    "year": "2016",
+    "price": "23000",
+    "color": "Grey",
     "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    "description": "This is the best bike in the world."
   },
 
   {
-    "make": "Nissan",
-    "model": "Rogue",
-    "year": "2006",
-    "price": "8999",
-    "color": "FireBrick",
+    "make": "GMC",
+    "model": "Terrain",
+    "year": "2010",
+    "price": "20000",
+    "color": "black",
     "purchased": false,
-    "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    "description": "This is an awesome SUV, at home in the city or the woods."
   },
 
   {

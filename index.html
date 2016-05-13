@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title></title>
-    <!--Bootstrap with standard navbar.with only a text input and button-->
-  </head>
-  <body>
-<!--display all properties of the car in the DOM-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Car Lot</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
 
-  </body>
+<body>
+
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle collapsed">
+      </button> -->
+      
+    </div>
+
+			<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input id="input" type="text" class="form-control" placeholder="Click on a car to change its description and availability">
+        </div>
+       	<label id="labelPurchased" class="disabled" for="purchased"><input id="purchased" type="checkbox">Purchased?</label>
+        <button id="submit" class="btn btn-default">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+	<!-- Page wrapper -->
+	<div id="container" class="container wrapper"> 
+		<!-- populate output -->
+		<div id="output" class="row">
+		</div>
+
+	</div> 
+
+	<script src="javascripts/carLot.js"></script>
+	<script src="javascripts/dom.js"></script>
+	<script src="javascripts/card.js"></script>
+	<script src="javascripts/quiz.js"></script>
+
+</body>
 </html>

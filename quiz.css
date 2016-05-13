@@ -1,3 +1,60 @@
 /*border of box must match car*/
 /*on element click, change border size and background color.*/
 /*on element click, clear value of text input and place cursor into text input*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #30638E;
+}
+
+.wrapper {
+	width: 95%;
+}
+
+.form-group input[type="text"] {
+	width: 500px;
+	color: #D1495B;
+}
+
+input {
+	margin-right: 10px;
+}
+
+.disabled {
+	color: darkgrey;
+}
+
+.card {
+	background: #fff;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+
+.available {
+	color: skyblue;
+}
+
+.outOfStock {
+	color: orangered;
+}
+
+.card-focus {
+	background: lightgray;
+	border-width: 6px;
+}
+
+.cardFocus {
+	border: 5px solid black;
+}
+#outOfStock {
+  color: red;
+  font-size: 2em;
+}
