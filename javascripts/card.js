@@ -23,37 +23,26 @@ var Carlot = (function(car) {
 		var newDescription = editor.querySelector(".description");
 		textInput.addEventListener("keyup", function() {
 			newDescription.innerText = textInput.value;
-		//	currentInventory.item.purchased = checkPurchased.checked;
-
-		// if (currentInventory.item.purchased === "true") {
-		// 	checkPurchased.checked = true;
-		// } else if (currentInventory.item.purchased === "false") {
-		// 	checkPurchased.checked = false;
-		// }
 	})
 
 		var boughtCar = document.getElementById('purchased');
     boughtCar.addEventListener('change', function(event){
-			if (boughtCar.checked) {
-        editor.lastElementChild.innerHTML = "<p id='outOfStock' >Out of Stock</p>";
-        var stock = editor.querySelector('#outOfStock').innerHTML;
-        document.getElementById('outOfStock').innerHTML = stock;
-      }
-		})
+        editor.lastElementChild.lastElementChild.innerHTML = "<p id='outOfStock' >Out of Stock</p>";
+      })
   }
-	car.cardFocusOff = function(event) {
-		event.preventDefault();
-		Carlot.editInventory(currentInventory);
-		editor.classList.remove("card-focus");
-		// currentList.classList.remove("cardFocus");
-		textInput.removeAttribute("disabled", "false");
-		textInput.setAttribute("disabled", "true");
-		textInput.value = "";
-		checkPurchased.setAttribute("disabled", "true")
-		checkPurchased.checked = false;
-		labelPurchased.classList.add("disabled");
-		edit = false;
-	}
+  car.cardFocusOff = function(event) {
+    event.preventDefault();
+    Carlot.editInventory(currentInventory);
+    editor.classList.remove("card-focus");
+    currentList.classList.remove("cardFocus");
+    textInput.removeAttribute("disabled", "false");
+    textInput.setAttribute("disabled", "true");
+    textInput.value = "";
+    checkPurchased.setAttribute("disabled", "true")
+    checkPurchased.checked = false;
+    labelPurchased.classList.add("disabled");
+    edit = false;
+  }
 
 	return car;
 

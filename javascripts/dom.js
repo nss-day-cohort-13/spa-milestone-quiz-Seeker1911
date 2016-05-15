@@ -10,13 +10,13 @@ var Carlot = (function(car) {
                 `<p>Price: $${car.item.price}</p>` +
                 `<p class="text-capitalize">Color: ${car.item.color}</p>` +
                 `<p class="text-justify description"> ${car.item.description}</p>` +
-                `<p>Availability</p>` +
-                `<p class="available">Available</p>`;
-            //if (car.item.purchased = "false") {
-                //populater += `<p class="available">Available</p>`;
-            //} else {
-                //populater += `<p class="outOfStock">Out of stock</p>`;
-            //}
+                `<p>Availability</p>`// +
+                //`<p class="available">Available</p>`;
+            if (car.item.purchased = "false") {
+                populater += `<p class="available">Available</p>`;
+            } else {
+                populater += `<p class="outOfStock">Out of stock</p>`;
+            }
             populater += `</div>` +
                 `</div>` +
                 `<div class="column col-lg-1 col-md-1 col-sm-1"></div>`;

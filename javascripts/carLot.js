@@ -15,7 +15,7 @@ var Carlot = (function(car) {
 				newCar = new CarObj(data.cars[i], `car${i}`);
 				inventory.push(newCar);
 			}
-		Carlot.populatePage(inventory);
+    Carlot.populatePage(inventory);
 		});
 		requestData.open("GET", "inventory.json");
 		requestData.send();
