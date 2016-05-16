@@ -54,7 +54,3 @@ input {
 .cardFocus {
 	border: 5px solid black;
 }
-#outOfStock {
-  color: red;
-  font-size: 2em;
-}
